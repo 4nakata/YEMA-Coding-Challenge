@@ -6,7 +6,19 @@
 import scrapy
 
 
-class YemaItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+class Product(scrapy.Item):
+    upc_gtin = scrapy.Field()
+    brand = scrapy.Field()
+    name = scrapy.Field()
+    description = scrapy.Field()
+    ingredients = scrapy.Field()
+    package = scrapy.Field()
+
+
+class Branch(scrapy.Item):
+    product_id = scrapy.Field()
+    chain = scrapy.Field()
+    branch = scrapy.Field()
+    price = scrapy.Field()
+    category = scrapy.Field()
+    product_url = scrapy.Field()
