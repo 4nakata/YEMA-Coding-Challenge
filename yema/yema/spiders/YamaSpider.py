@@ -11,7 +11,7 @@ products = []
 branches = []
 
 
-class YamaSpider(scrapy.Spider):
+class YemaSpider(scrapy.Spider):
 
     name = 'startSpider'
 
